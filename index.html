@@ -102,11 +102,11 @@
         margin-right: 25%;
       }
 
-      #full_form {
-      }
-
-      #contact {
-        display: inline-block;
+      .contact {
+        font-size: 3.5em;
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: 5%;
       }
     </style>
   </head>
@@ -144,7 +144,7 @@
 
       <div class="navbar">Pinata</div>
       <a href="https://pinata.ai" target="_blank"><img class="content" src="images/pinata.PNG"></a>
-      
+
       <div class="navbar">Vera.Zone</div>
       <a href="https://vera.zone/" target="_blank"
         ><img class="content" src="images/vera.PNG"
@@ -166,10 +166,12 @@
     <div>
       <div id="full_form" class="head">Contact Me...</div>
       <hr id="hr" />
-      <div class="navbar">
-        <a href="https://www.linkedin.com/in/coreydubin/" target="_blank">On LinkedIn</a>
-      </div>
-      </div>
+      <p class="contact">
+        <a href="https://www.linkedin.com/in/coreydubin/" target="_blank">On <span style="color: #0a66c2 ">LinkedIn</span></a>
+        <a href="mailto:coreydubin@nyu.edu">Over <span style="color: #4285F4">e</span><span style="color: #DB4437">m</span><span style="color: #F4B400">a</span><span style="color: #4285F4">i</span><span style="color: #0F9D58">l</span>
+        </a>
+      </p>
+    </div>
 
     <!-- <?php
   // define variables and set to empty values
