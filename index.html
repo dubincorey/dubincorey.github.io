@@ -30,6 +30,7 @@
       #background {
         background-image: url("images/city.jpg");
         background-size: cover;
+        height: 750px;
       }
 
       #title {
@@ -51,14 +52,13 @@
         text-align: center;
         font-size: 2em;
         color: #102b39;
-        margin-top: 5%;
       }
 
       #bar {
         position: -webkit-sticky;
+        z-index: 100;
         position: sticky;
         top: 0;
-        margin-top: 50%;
         height: 50px;
         width: 100%;
         background-color: #e5c48e;
@@ -108,6 +108,7 @@
         justify-content: space-around;
         padding-bottom: 5%;
       }
+
     </style>
   </head>
 
@@ -115,15 +116,16 @@
     <div id="background">
       <div id="title">Corey Dubin</div>
       <hr id="hr" />
-      <div id="bar">
-        <nav class="navbar">
-          <a href="#about_me">About Me</a>
-          <a>|</a>
-          <a href="#grey">Projects</a>
-          <a>|</a>
-          <a href="#full_form">Contact Me</a>
-        </nav>
-      </div>
+    </div>
+
+    <div id="bar">
+      <nav class="navbar">
+        <a href="#about_me">About Me</a>
+        <a>|</a>
+        <a href="#grey">Projects</a>
+        <a>|</a>
+        <a href="#full_form">Contact Me</a>
+      </nav>
     </div>
 
     <div>
