@@ -5,28 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/dist/output.css" rel="stylesheet" />
   </head>
-  <body class="font-medium">
+  <body class="font-semibold">
     <div
-      class="container mx-auto relative inset-0 bg-gradient-to-r from-cyan-800 snap-mandatory snap-both"
+      class="container mx-auto relative inset-0 bg-gradient-to-r from-cyan-800"
     >
       <div class="flex flex-row items-center justify-center h-screen">
         <img
           src="images/bluegenesbash38.jpg"
           class="w-48 mx-10 rounded-lg basis-1/12"
         />
-        <div class="basis-1/2 text-6xl font-semibold snap-center">
+        <div class="basis-1/2 text-6xl">
           Hi! I'm Corey Dubin. I'm a Software Engineer.
         </div>
-      </div>
-      <div
-        class="fixed inset-y-0 right-0 bg-slate-500 text-center flex justify-center"
-      ></div>
-      <div
-        class="flex items-center justify-center h-screen text-center text-6xl font-semibold w-1/2"
-      >
-        <p class="bg-gradient-to-r from-red-600 snap-center rounded-full">
-          Check out my GitHub, LinkedIn, or Resume.
-        </p>
+        <div class="flex-col">
+          <div
+            class="transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300"
+          >
+            <a href="https://github.com/dubincorey" target="_blank"> GitHub</a>
+          </div>
+          <div class="transition">
+            <a href="https://www.linkedin.com/in/coreydubin/" target="_blank"
+              >LinkedIn</a
+            >
+          </div>
+          <div class="transition">
+            <a
+              href="https://docs.google.com/document/d/e/2PACX-1vRoKne3bT8RGzc14NXP1dgzWtK92jn0IdPrOzrWRYSktxbYxyvJYz0v8QXJjpJM0g/pub"
+              target="_blank"
+              >Resume</a
+            >
+          </div>
+        </div>
       </div>
     </div>
   </body>
