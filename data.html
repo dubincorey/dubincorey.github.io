@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.css"
+    />
+    <script
+      type="text/javascript"
+      charset="utf8"
+      src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.js"
+    ></script>
+    <script>
+      $.ajax({
+        url: "https://data.cityofnewyork.us/resource/au7q-njtk.json?$limit=50000",
+      }).done(function (data) {
+        $("#table").dataTable({
+          aaData: data,
+          columns: [
+            { data: "objectid" },
+            { data: "boro_name" },
+            { data: "ifoaddress" },
+            { data: "assetsubty" },
+            { data: "date_inst" },
+          ],
+        });
+      });
+    </script>
+  </head>
+  <body class="font-semibold bg-stone-200">
+    <div class="container mx-auto relative inset-0 mt-4">
+      <a href="index.html" class="ml-10">Home</a>
+    </div>
+    <div>
+      <a href="racks.html" class="grid justify-items-center text-blue-600"
+        >Bike Racks</a
+      >
+    </div>
+    <div class="container grid justify-items-center">
+      <table id="table" class="table-auto">
+        <thead>
+          <tr>
+            <th>Object ID</th>
+            <th>Borough name</th>
+            <th>Rack address</th>
+            <th>Asset subtype</th>
+            <th>Date installed</th>
+          </tr>
+        </thead>
+      </table>
+    </div>
+  </body>
+</html>
